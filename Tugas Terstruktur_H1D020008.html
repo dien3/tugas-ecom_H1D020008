@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tugas Terstruktur_H1D020008</title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		body{
+			margin: 0 auto;
+			width: 100%;
+			background-color: #F0F8FF;
+			float: left;
+			text-align: left;
+			font-family: "Times New Roman", Times, serif;
+			line-height: 1.5;
+			background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.wallpapersden.com%2Fimage%2Fdownload%2Fsleepy-mountains_am5mameUmZqaraWkpJRqZmdlrWdtbWU.jpg&f=1&nofb=1');
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			background-size: cover;}
+		header{
+			width: 100%;
+			margin: 0 auto;
+			text-align: left;
+			padding: 10px;
+			padding-left: 35px;
+			font-size: 15px;
+			font-weight: bold;
+			color: white;
+			background-color: #002540;
+			position: relative;
+			box-shadow: 15px -18px 15px 15px black;}
+		h1{
+			font-family: "Times New Roman", Times, serif;}
+		.side{
+			width: 18%;
+			float: left;
+			padding: 10px;}
+		#tengah{
+			width: 64%;
+			height: 100%;
+			background-color: white;
+			text-align: center;
+			float: left;
+			padding: 10px;}
+		p{
+			text-align: justify;
+			padding: 0px 10px 0px 10px;}
+		li{
+			text-align: left;}
+		li img{
+			width: 200px;}
+		
+		.toc1{
+			text-align: left;
+			width: 350px;
+			height: 50px;
+			padding: 10px;
+			background-color: ghostwhite;}
+		.toc{
+			text-align: left;
+			width: 350px;
+			height: 400px;
+			margin-top: -15px;
+			padding: 0px 10px 10px 10px;
+			background-color: ghostwhite;
+			display: none;}
+		.toc a,.toc li{
+			text-decoration: none;
+			color: blue;
+			margin-left: -10px;
+			list-style-type: none;}
+		button{
+			border: none;
+			background-color: transparent;}
+		#ikonhide{
+			display: none;
+			margin-left: -15px;
+		}
+
+		@media screen and (max-width: 780px){
+			header{
+				padding: 5px;
+				font-size: 10px;
+				padding-left: 15px;}
+			.side{
+				width: 5%;}
+			#tengah{
+				width: 90%;}
+			#up{
+				right: 20px;
+				bottom: 20px;}
+		}
+		@media screen and (max-width: 500px){
+			.toc{
+				width: auto;
+				border-radius: 1%;}
+		}
+
+		#up{
+			font-size: 30px;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			border-radius: 50px;
+			padding-bottom: 1px;
+			background-color: lightgrey;
+			right: 50px;
+			bottom: 40px;
+			position: fixed;
+			float: left;
+			border: 1px solid white;}
+		footer{
+			width: 100%;
+			height: 100px;
+			float: left;
+			text-align: center;
+			background-color: #002540;}
+		footer a{
+			text-decoration: none;
+			padding-top: 20px;
+			color: black;}
+	</style>
+	<script type="text/javascript">
+		function lihatmenu() {
+			document.getElementById("showtoc").style.height = "400px";
+			document.getElementById("showtoc").style.display="block";
+			document.getElementById("ikonshow").style.display="none";
+			document.getElementById("ikonhide").style.display="block";			
+		}
+		function tutupmenu() {
+			document.getElementById("showtoc").style.height = "0px";
+			document.getElementById("showtoc").style.display="none";
+			document.getElementById("ikonshow").style.display="block";
+			document.getElementById("ikonhide").style.display="none";
+		}
+	</script>
+</head>
+<body id="">
+<header>
+	<h2>Tugas Terstruktur E-Commerce</h2>
+</header>
+<section>
+	<div class="side"></div>
+	<div id="tengah">
+		<div class="b2b">
+		<h1>Contoh E-Commerce B2B (Business to Business)<br>dan B2C (Business to Customer)</h1><font color="grey">H1D020008 | Dieny 'Izzaty | E-commerce E</font><br><br>
+		<div class="toc1">
+			<b>Table of Contents</b>
+			<button><a href="javascript:void(0);" onclick="lihatmenu()" id="ikonshow">[show]</a></button>
+			<button><a href="javascript:void(0);" onclick="tutupmenu()" id="ikonhide">[hide]</a></button>
+		</div>
+		<div id="showtoc" class="toc">
+			<ul>
+				<li><a href="#softwareseni">Softwareseni</a></li>
+				<li><ul>
+					<li><a href="#profil1">Profil perusahaan</a></li>
+					<li><a href="#deskripsi1">Deskripsi Produk/Jasa yang Diberikan</a></li>
+					<li><a href="#mpro1">Mekanisme Komunikasi Pemasaran</a></li>
+					<li><a href="#mjb1">Mekanisme Jual Beli</a></li>
+					<li><a href="#mpem1">Mekanisme Pembayaran</a></li>
+					<li><a href="#mdp1">Mekanisme Distribusi Produk/Jasa</a></li>
+					<li><a href="#fitur1">Fitur Tambahan E-commerce</a></li>
+				</ul></li>
+				<li><a href="#shopee">Shopee</a></li>
+				<li><ul>
+					<li><a href="#profil2">Profil perusahaan</a></li>
+					<li><a href="#deskripsi2">Deskripsi Produk/Jasa yang Diberikan</a></li>
+					<li><a href="#mpro2">Mekanisme Komunikasi Pemasaran</a></li>
+					<li><a href="#mjb2">Mekanisme Jual Beli</a></li>
+					<li><a href="#mpem2">Mekanisme Pembayaran</a></li>
+					<li><a href="#mdp2">Mekanisme Distribusi Produk/Jasa</a></li>
+					<li><a href="#fitur2">Fitur Tambahan E-commerce</a></li>
+				</ul></li>
+			</ul>
+		</div>
+
+		<br><br id="softwareseni">
+		<a href="https://www.softwareseni.co.id/"><img src="https://assets.website-files.com/5d8a2887296e9177accb65bc/5f7163f5f3dbe909ed04ce92_softwareseni-logo.svg" width="200px"></a>
+		<h2>SOFTWARESENI</h2><br>
+			<b id="profil1">PROFIL PERUSAHAAN</b>
+		<p>
+			SoftwareSeni adalah perusahaan Software Development yang berbasis di Yogyakarta & Australia. SoftwareSeni juga merupakan perusahaan konsultasi IT yang melayani jasa pembuatan software, maintenance website, dan aplikasi. SoftwareSeni mengembangkan bisnis dengan menciptakan solusi berbasis website, memecahkan masalah sulit dari pengalaman pengguna (UX) hingga desain dan kode di seluruh dunia. SoftwareSeni sejak 2013 dengan klien Australia dan berkembang ke berbagai negara hingga di 2017, SoftwareSeni mulia bekerja sama dengan perusahaan Indonesia. Terhitung per 2021, SoftwareSeni memiliki lebih dari 200 staff professional yang ahli di setiap bidangnya. Integritas SoftwareSeni dan profesionalitas tim di dalam nya, membuat SoftwareSeni  banyak dipercaya oleh perusahaan-perusahaan besar seperti Traveloka, Angkasa Putra, Astra Internasional, dan lain-lain.</p><br>	
+
+			<b id="deskripsi1">DESKRIPSI PRODUK/JASA YANG DIBERIKAN</b><br>
+		<p>
+			SoftwareSeni memiliki banyak service sesuai dengan kebutuhan digitalisasi perusahaan klien, diantaranya Desain Grafis, User Experience, Customer Service and Support, Application Development, hingga Wordpress & Plugin Development. Layanan yang diberikan pihak SoftwareSeni, yaitu pembuatan website perusahaan, aplikasi mobile, marketplace & ecommerce, dan custom software. Selain itu, SoftwareSeni juga memiliki model kerjasama yang beragam, diantaranya:
+			<ul>
+				<li>Seat Outsourcing (Staf yang berdedikasi khusus untuk project)</li>
+				<li>Ad Hoc (Tim yang siap sedia untuk request satuan)</li>
+				<li>Project-based (Tim profesional untuk menyelesaikan target project)</li>
+			</ul>
+		</p><br>
+
+		<b id="mpro1">MEKANISME KOMUNIKASI PEMASARAN</b><br>
+			<p>Mekanisme pemasaran yang digunakan softwareseni salah satunya adalah Periklanan (<i>Advertising</i>) melalui	Instagram Softwareseni <i>Official</i></p>
+			<p style="text-align: center;"><a href="https://www.instagram.com/softwareseni_id/"><img src="ig softwareseni.jpeg" title="sumber: instagram softwareseni" style="width: 300px;" ></a>
+			</p><br>
+
+			<b id="mjb1">MEKANISME JUAL BELI</b><br>
+		<p>
+			Pihak SoftwareSeni mempersiapkan tim staf sesuai bidangnya ketika klien melakukan kerjasama dengan SoftwareSeni. Klien terlebih dahulu melakukan persiapan, yaitu dengan menentukan kebutuhan dan spesifikasi, menetapkan tujuan dan sasaran, memfokuskan pada hal yang tepat, dan persiapan tersebut di dokumentasikan. Kemudian, klien menentukan model kerjasama apa yang akan dipilih sesuai dengan kebutuhan. Pihak SoftwareSeni akan menyesuaikan klien serta model kerjasama yang dipilih. Tim staf SoftwareSeni akan mulai bekerjasama dengan klien sampai proyek selesai.
+		</p><br>
+
+			<b id="mpem1">MEKANISME PEMBAYARAN</b><br>
+		<p>
+			Klien akan melakukan pembayaran sesuai kebutuhan dan pilihan model kerjasama dengan SoftwareSeni. SoftwareSeni akan memastikan produk digital yang dibuat sesuai dengan kebutuhan bisnis klien dan memastikan fitur, dan fungsi produk digital benar-benar sesuai dengan kebutuhan perusahaan klien. 
+		</p><br>
+
+			<b id="mdp1">MEKANISME DISTRIBUSI PRODUK/JASA</b><br>
+		<p>
+			Pihak SoftwareSeni akan memberikan garansi layanan selama 1 bulan setelah proyek IT selesai. Proyek akan diterima setelah kedua belah pihak telah memastikan bahwa proyek sesuai dengan kebutuhan dan pembayaran disetujui. </p><br>
+
+			<b id="fitur1">FITUR-FITUR TAMBAHAN PADA E-COMMERCE</b><br>
+		<p>
+			Fitur-fitur tambahan pada SoftwareSeni, diantaranya:
+			<ul>
+				<li>Dapat melakukan konsultasi tentang project atau ketika ingin membuat aplikasi</li>
+				<li>Blog berisi kumpulan artikel tentang perkembangan teknologi terkini</li>
+				<li>Mengubah bahasa pada laman web tersebut ke bahasa Australia atau Indonesia</li>
+				<li>Pencarian atau search engine</li>
+			</ul>
+		</p>
+		</div>
+
+		<div class="b2c">
+			<br><br id="shopee">
+			<a href="https://shopee.co.id/"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpngimage.net%2Fwp-content%2Fuploads%2F2018%2F06%2Flogo-shopee-png-3.png&f=1&nofb=1"  width="100"></a>
+		<h2>SHOPEE</h2>
+		<p>
+			Shopee merupakan salah satu platform yang menawarkan transaksi jual beli online yang mudah, aman, cepat, dan terpercaya dengan rancangan sistem pembayaran dan dukungan logistik yang kuat.</p><br>
+		<b id="profil2">PROFIL PERUSAHAAN</b><br>
+			<p>
+				Perusahaan Shopee merupakan salah satu bagian dari SEA Group asal Singapura. Shopee diluncurkan pertama kali pada tahun 2015 secara serentak di 7 negara, yaitu Singapura, Thailand, Malaysia, Taiwan, Indonesia, Filipina, dan Vietnam. Shopee yang bergerak di dunia e-commerce dipimpin oleh Chris Feng, salah satu mantan pegiat Rocket Internet yang pernah memimpin Zalora dan Lazada. Shopee bisa diakses melalui website dengan mengakses <a href="https://shopee.co.id/">https://shopee.co.id/</a> dan melalui aplikasi dengan mendownload terlebih dahulu melalui Play Store maupun Apps Store.</p>
+			<p>
+				Awalnya, Shopee merupakan perusahaan yang memiliki konsep bisnis C2C (Customer to Customer). Namun, seiring berjalannya waktu, Shopee beralih menjadi bisnis C2C (Customer to Customer) dan bisnis B2C (Bisnis to Customer) dengan hadirnya Shopee Mall pada tahun 2017. Bahkan, mulai tahun 2020 Shopee memiliki jasa pengiriman khusus untuk beberapa penjual terpilih, yang bisa disebut Shopee Express.</p>
+			<p>
+				Untuk logo Shopee sendiri berkaitan dengan warna oranye yang berarti memiliki daya tarik. Logo tersebut menggambarkan sebuah keranjang belanjaan yang bertuliskan huruf ‘S’ dibagian depan keranjang yang mengartikan Shopee itu sendiri.</p><br>
+
+		<b id="deskripsi2">DESKRIPSI PRODUK/JASA YANG DIBERIKAN</b><br>
+			<p>
+				Shopee menyediakan berbagai macam kategori produk, diantaranya elektronik, komputer, aksesoris, pakaian, makanan & minuman, souvenir & pesta, perlengkapan rumah, buku & alat tulis, otomotif, perawatan & kecantikan, fotografi, olahraga & outdoor, dan lain-lain.</p>
+			<p>
+				Shopee memberikan jasa pembayaran secara online bisa melalui Bank, Minimarket, VISA, JCB, dan lain-lain. Jasa pengiriman juga diberikan oleh Shopee, seperti Shopee Xpress, JNE Express, Anteraja, Pos Indonesia, SICEPAT, J&T Express, dan lain-lain. Selain itu, Shopee juga menyediakan jasa pengembalian barang & dana.</p><br>
+
+		<b id="mpro2">MEKANISME KOMUNIKASI PEMASARAN</b><br>
+			<p>
+				Komunikasi pemasaran merupakan suatu interaksi yang tertuju dengan konsumen dan calon konsumen menggunakan satu atau lebih media, seperti surat kabar, majalah, tabloid, televisi, <i>billboard</i>, telemarketing, radio, dan internet (Kayode, 2014). Adapun komunikasi pemasaran yang dilakukan Shopee, beberapa diantaranya:<br>
+				<ul>
+					<li>Periklanan (<i>Advertising</i>)
+						<p>
+							Iklan merupakan media komunikasi massa yang dapat dilakukan melalui media cetak atau media elektronik. Shopee menerapkan meode periklanan menggunakan media sosial dan <i>telemarketing</i> dan media cetak seperti:
+							<ul>
+								<li>Shopee Instagram <i>Official</i><br><a href="https://www.instagram.com/shopee_id/"><img src="ig shopee.jpeg" title="sumber: shopee instagram"></a>
+								</li>
+								<li><i>Billboard</i><br><img src="billboard.jpg" title="sumber: https://kabarin.co.id/iklan-billboard-di-indonesia.html"></li>
+							</ul>
+						</p>
+					</li>
+					<li>Promosi Penjualan
+						<p>
+							Promosi penjualan berfungsi untuk mendorong terjadinya transaksi pembelian suatu produk dalam waktu singkat. Shopee menerapkan promosi penjualan melalui alat promosi seperti:
+							<ul>
+								<li>Kupon (Potongan harga dan <i>Cash Back</i>)<br><img src="kupon.jpeg"><br>
+								<a href="https://shopee.co.id/m/cashback-voucher#anchorId-1649408235302"><img src="kupon3.jpeg" style="width: 200px" title="sumber: shopee.co.id"></a></li>
+								<li>Pertandingan Sepakbola<br><img src="sepakbola.jpg"></li>
+								<li>Kupon gratis ongkir<br><a href="https://shopee.co.id/m/cashback-voucher" title="sumber: instagram shopee"><img src="ongkir.jpeg"></a><br><img src="ongkir1.jpeg" style="width: 200px;" title="sumber: shopee.co.id"></li>
+								<li>Brand Ambassador<br>
+								<img src="brandA1.jpeg"></li>
+								<li>Giveaway<br><img src="giveaway.jpeg"></li>
+							</ul>
+						</p>
+					</li>
+				</ul>
+			</p><br>
+
+		<b id="mjb2">MEKANISME JUAL BELI</b><br>
+			<p>
+				Dalam proses jual beli, penjual terlebih dulu menentukan produk apa yang ingin dijual pada aplikasi Shopee. Kemudian penjual akan menawarkan produk lengkap dengan keterangan, kegunaan, dan foto produk yang dijual. Disisi lain, pembeli akan mencari produk sesuai yang dibutuhkan pembeli. Setelah menemukan produk yang dicari dan yakin terhadap produk tersebut, pembeli akan checkout keranjang dan melakukan pembayaran.</p><br>
+
+		<b id="mpem2">MEKANISME PEMBAYARAN</b><br>
+			<p>
+				Pembayaran dilakukan setelah pembeli sudah yakin terhadap produk yang dicari dan melakukan checkout keranjang. Pembeli melakukan pembayaran secara online ke Shopee sekaligus mengisi alamat tujuan. Pembayaran bisa dilakukan dengan transfer melalui bank, minimarket yang menyediakan pembayaran shopee, Shopeepay, ataupun yang lainnya. Setelah itu dilakukan verifikasi pembayaran dan memilih jasa pengiriman produk yang sudah dipesan. Shopee akan mengecek pembayaran dan verifikasi pembayaran dan mengirim notifikasi ke penjual tersebut.</p><br>
+
+		<b id="mdp2">MEKANISME DISTRIBUSI PRODUK/JASA</b><br>
+			<p>
+				Pembeli bebas memilih jasa pengiriman yang tersedia di Shopee, namun ada tambahan biaya setiap pilihan dan itu menyesuaikan pilihan pembeli. Setelah itu, Penjual akan mendapatkan notifikasi dari Shopee tentang pembayaran produk dan jasa pengiriman yang dipilih oleh pembeli. Penjual akan melakukan proses packing dan mengatur pengiriman produk yang sudah dipilih oleh pembeli. Pengiriman dilakukan via kurir hingga produk sampai tujuan. Setelah pembeli menerima produk, kurir akan memverifikasi bahwa produk sudah diterima oleh pembeli. Pihak Shopee akan mengirimkan dana transaksi jual beli yang sudah dilakukan. Pembeli juga akan memverifikasi bahwa produk sudah diterima dan melakukan penilaian produk. Penilaian tersebut mempengaruhi nilai ketertarikan produk yang ada pada penjual/toko online tersebut.</p><br>
+
+		<b id="fitur2">FITUR-FITUR TAMBAHAN PADA E-COMMERCE</b><br>
+			<p>
+				Fitur-fitur tambahan pada Shopee, meliputi:
+				<ul>
+					<li>Penawaran seperti voucher diskon, cashback, dan gratis ongkir.</li>
+					<li>Pembayaran dengan koin Shopee.</li>
+					<li>Shopee games, untuk mendapatkan koin shopee secara gratis ataupun hadiah lain.</li>
+					<li>Shopee live dan Live chat, untuk mempromosikan dan berkomunikasi secara langsung antara penjual dan pembeli dengan mudah.</li>
+					<li>Keranjang belanja, tempat barang yang akan di checkout.</li>
+					<li>Pencarian atau search engine, untuk mencari produk yang dibutuhkan.</li>
+					<li>Notifikasi, untuk mengetahui informasi penting yang dikirimkan oleh pihak Shopee seperti produk yang sudah dikirimkan atau sudah diterima, dan lain--lain.</li>
+					<li>Event per bulan atau setiap ada hari besar, koin dan hadiah gratis lainnya, serta reward koin setiap hari.</li>
+					<li>SPayLater, melakukan pembelian terlebih dahulu, pembayaran dengan saldo dari shopee, nantinya mengganti dengan membayar ke shopee.</li>
+					<li>Shopee Food, mirip dengan gofood ataupun grabfood.</li>
+					<li>ShopeePay, pembayaran melalui Shopee dengan mengisi saldo Shopee terlebih dahulu.</li>
+					<li>Feed, mempromosikan produk yang dijual, dapat memberikan suka, komentar, dan membagikan.</li>
+				</ul>
+			</p><br>
+			<hr><br>
+			Referensi:
+			<p>
+				Masduki, Z.H., 2020. Penerapan Komunikasi Pemasaran Dan Handling Customer Pada Pt Shopee International Indonesia. <a href="https://dspace.uii.ac.id/bitstream/handle/123456789/29638/17211074%20Zulfian%20Hanif%20Masduki.pdf?sequence=1">pdf</a>
+			</p>
+			<br><hr><br>
+		</div>
+	</div>
+	<div class="side"></div>
+</section>
+
+<footer style="padding-left: 10%; padding-right: 10%;">
+	<font color="white" style="
+	text-align: center;
+	margin-left: 10%;
+	">
+	<hr>H1D020008 | Dieny 'Izzaty | E-commerce E</font>
+	<div id="up"><a href="#">⇪</a></div>
+</footer>
+</body>
+</html>
